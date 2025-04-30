@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <app-bar></app-bar>
+    
+    <main>
+        <section class="note-form">
+            <h2>Tambah Catatan</h2>
+            <note-form></note-form>
+        </section>
+        
+        <section class="note-list">
+            <h2>Daftar Catatan</h2>
+            <div id="notes-container"></div>
+        </section>
+        <section class="note-filter">
+            <h2>Filter Catatan</h2>
+            <select id="filter-category">
+                <option value="Semua">Semua</option>
+                <option value="Umum">Umum</option>
+                <option value="Pekerjaan">Pekerjaan</option>
+                <option value="Pribadi">Pribadi</option>
+                <option value="Ide">Ide</option>
+            </select>
+        </section>
+        
+    </main>
+    
+    <script src="script.js" defer></script>
+    <script src="components/app-bar.js" defer></script>
+    <script src="components/note-form.js" defer></script>
+    <script src="components/note-item.js" defer></script>
+    <script src="components/localStorage.js" defer></script>
+</body>
+</html>
